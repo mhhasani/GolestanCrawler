@@ -13,7 +13,7 @@ url = 'https://golestan.iust.ac.ir/forms/authenticateuser/main.htm'
 
 driver = webdriver.Chrome()
 driver.get(url)
-# wait for finding CapRow id in the page
+
 try:
     element = WebDriverWait(driver, 15).until(
         EC.presence_of_element_located((By.ID, "F51701"))
